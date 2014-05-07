@@ -1,0 +1,429 @@
+html, body {height:100%}
+
+/* Padr�o para todo documento */
+body{
+	text-align: center;  /* Alinhamento do texto padr�o */
+	padding:0;  /* Define o espa�amento padr�o */
+	margin:0;  /* Define a margem padr�o */
+	background:#E0FBFE;  /* Define a cor padr�o */
+	font-family:verdana,arial,helvetica,sans-serif;  /* Define a fonte padr�o */
+	font-size: 11px;  /* Define o tamanho padr�o da fonte */
+/*	color: #E0FBFE;*/
+	color: #04818D;
+}
+
+/* */
+#conteiner{
+	margin: auto;	
+	width: 780px;
+	text-align: left;
+	height:100%;
+	min-height:100%;
+	background:#5DA4AE ;
+	margin-bottom:-20px;
+	color: #99CCFF;
+/*	color: #5DA4AE;*/
+}
+#conteiner2{
+	margin-top: 20%;
+	width: 780px;
+	text-align: center;
+	height:100%;
+	min-height:100%;
+	color: #5DA4AE;
+}
+html>body #conteiner{height:auto;} 
+/*para mozilla e IE*/
+
+/* --- Caixas  --------------------------------------------------*/
+#logar {
+    text-align: center;  /* Alinhamento do texto padr�o */
+	padding:0;  /* Define o espa�amento padr�o */
+	margin:0;  /* Define a margem padr�o */
+	background:#5DA4AE;  /* Define a cor padr�o */
+	font-family:verdana,arial,helvetica,sans-serif;  /* Define a fonte padr�o */
+	font-size: 12px;  /* Define o tamanho padr�o da fonte */
+	color: #000000;
+}
+
+#cabecalho {
+	top: 0;
+	position: center;
+	width: 100%;
+	height: 200px;
+	background: #5DA4AE;
+	background-image: url(logistica.png);
+	background-repeat: no-repeat;
+	
+}
+#tapa-furo {
+	top: 0;
+	left: 0;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	background-image: url(lago.jpg);
+	background-repeat: no-repeat;
+}
+#secretaria{
+	position:relative;
+	width:530px;
+	left:250px;
+	top:-25px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;  
+	padding-top: 2px;
+}
+#secretaria a {
+	font-size: 13px;
+	color: #ffffff;
+	text-decoration:none;
+}
+#secretaria a:active{
+text-decoration: underline;
+}
+#secretaria a:hover{
+text-decoration: underline;
+} 
+#caminho {
+	position:relative;
+	top:-22px;
+	left:0;
+	font-size: 11px;
+	height:18px;
+	margin: 2px 0px 0px 0px;
+	padding-left: 5px;
+	background-color:white;
+	}
+#menu {
+	position:relative;
+	float:left;
+	background:#E0FBFE;  /* Define a cor padr�o */
+	width:150px;
+	margin:0px;
+	z-index:2;
+}
+#atalhos {
+	position:relative;
+	float:right;	
+	width:125px;
+	margin-top:-20px;
+	margin-right:8px;
+	left:2px;
+	font-size: 11px;
+}
+#atalhos img {border:0px;}
+#conteudo {
+	position:relative;
+	float:left; 	
+	width:480px;
+	margin-top:-20px;
+}
+/*ajustes-------------------*/
+#innercenter{padding:10px}
+#innercenter ul{list-style:inside; margin:20px;}
+* html #rodape {/*penas o ie pega esse estilo*/
+\height:17px;/* for ie5 */
+he\ight:20px;/* for ie6 */
+}
+#limpa_rodape{clear:both;height:20px;}
+/*faz o espaco para o rodape*/
+div,p {margin-top:0}/*limpa a margin-top para mozilla*/
+* html #centrecontent {height:1%;margin-bottom:12px}/* ajuste para o no IE*/
+#rodape {
+	margin:auto;
+	width:780px;
+	clear:both;
+	height:19px;
+	background-color: white;
+	color: #030000;
+	border-top: 1px solid black;
+	text-align:right;
+	font-size: 10px;
+	position:relative;
+}
+#rodape p {padding-right:5px;padding-top:2px}
+
+/*--------------elementos de apoio------------*/
+/*-------conteudo-------*/
+#area1{
+	position: relative;
+	float: center;
+	width: 230px;
+	min-height: 155px;
+	margin: px 0px 5px 5px;
+	}
+#area2{
+	position:relative;
+	float:right;	
+	width:230px;
+	min-height: 155px;
+	margin:0px 5px 5px 0px;
+	}
+#area3{
+	position:relative;
+	float:left;	
+	width:230px;
+	min-height: 155px;
+	margin:5px 0px 5px 5px;
+	}
+#area4{
+	position:relative;
+	float:right;	
+	width:230px;
+	min-height: 155px;
+	margin:5px 5px 5px 0px;
+}
+#noticias{
+	position:relative;
+	float:right;	
+	width:230px;
+	min-height: 155px;
+	font-size: 11px;
+	background:#f8f8f8;
+	padding: 0px 2px 0px 2px;
+	margin:0px 5px 5px 0px;
+}
+.barra{
+	background: url(images/barras.gif);
+	background-repeat: no-repeat;
+	font-weight: bold;
+	font-size: 13px;
+	height: 20px;
+	color: gray;
+	padding: 1px 2px 1px;
+	margin-bottom: 5px;
+	
+}
+.mais {
+	font-size: 9px;
+	text-align: right;	
+	
+}
+/*----------coluna de atalhos---------*/
+
+#servicos
+{
+background-color:#CCE2E0;
+margin-top:4px;
+margin-bottom:6px;
+}
+#servicos p {padding: 3px 3px 5px 3px;}
+#contatos1 
+{
+height:18px;
+background-color:#F39D54;
+font-weight:bold;
+margin-top:4px;
+padding-bottom:1px;
+color: #ffffff;
+font-weight:bold;
+}
+#contatos2 {background-color:#F3E3D5;
+padding: 3px 3px 5px 3px;}
+#banners {margin-top:4px;}
+#banners img {margin-top: 3px;}
+/*----------rodape---------*/
+.assina_pro
+{
+	font-size: 11px;
+	font-weight: bold;
+	color: #006666;
+}
+/*-----Outros elementos links e tags--------*/
+a:link  
+{
+	color: #386699;
+	text-decoration : none;
+}
+
+a:visited  
+{ 
+	color : navy;
+	text-decoration : none; 
+}
+
+a:active  
+{ 
+	text-decoration : none; 
+}
+
+a:hover  
+{ 
+	text-decoration : underline;
+
+}
+
+
+.linksec:link  
+{
+	font-size: 11px;
+	color: #ffffff;	
+}
+
+.linksec:visited  { 
+	font-size: 11px;
+	color: #ffffff;
+}
+
+.linksec:active  { 
+	font-size: 11px;
+	color: #ffffff;	
+}
+
+.linksec:hover  { 
+        font-size: 11px;
+	color: #ffffff;		
+}
+
+.link_box:link  
+{
+	color: #000000;
+	font-size: 9px;	
+}
+
+.link_box:visited  
+{ 
+	color: #000000;
+	font-size: 9px;	
+}
+
+.link_box:active  
+{ 
+	color: #000000;
+	font-size: 9px;		
+}
+
+.link_box:hover  
+{ 
+	color: #000000;
+	font-size: 9px;		
+}
+h1{
+	font-size: 25px;
+	font-weight: bold;
+	color: #333366;
+	margin: 0px;
+}
+
+h2{
+	font-size: 20px;
+	font-weight: bold;
+    text-align : center;
+	color: white;
+	margin-top: 4px;	
+	margin-bottom: 4px;
+}
+ 
+h3{
+	font-size: 14px;
+	font-weight: bold; 		
+	color: #333366; 
+	margin-top: 0px;	
+	margin-bottom: 4px;
+}
+h4{
+    font-size: 11px;
+	font-weight: normal;
+    text-align : center;
+	color: white;
+	margin: 4px;
+	
+}
+
+h6{
+    font-size: 12px;
+    font-weight: normal;
+	color: #333366;
+	margin: 0px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* formul�rios */
+input, select, textarea 
+{
+	font-size: 11px;
+	text-align : left;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;		
+}
+#botao1, input{
+    font-size: 12px;
+	text-align : center;
+	margin: 0px;
+}
+/*----------tpl1245---------*/
+#lista{
+width: 100%;
+position:relative;
+}
+#pagina{
+position: relative;
+text-align: center;
+
+}
+#table{
+    width:500px;
+    border: 1px solid #ccc;
+}
+.table td{
+    border: 1px solid #ccc;
+	font-size:11px;
+    margin: 0px;
+    dding:2px;
+}
+.table th {
+    font-size:11px;
+    font-weight: bold;
+    margin: 0px;
+    padding:2px; }
+.id, .date, .action{
+    width:1px;
+}
+.date{
+    white-space: nowrap;
+}
+#texto{
+width: 100%;
+position: relative; 
+}
+td {
+  font-size:11px;
+  border: 1px solid #ccc;
+    overflow: hidden;
+    width: 100px;
+    border-left-style: solid;
+    border-left-width: 1;
+    border-top-style: solid;
+    border-top-width: 1;
+    border-bottom-style: solid;
+    border-bottom-width: 1;
+    background-color:#E0FBFE;
+    text-align : center;
+    
+    color: white;
+margin: 0px;
+padding:2px;
+}
+th {
+    font-size:11px;
+    font-weight: bold;
+    margin: 0px;
+    padding:2px; }
+#nav_pagi{
+  font-size: 12px;
+	text-align : center;
+	margin: 0px;
+
+}
+
+
+
+
+
+
+
