@@ -1,6 +1,6 @@
 <?php
-include_once "../../BD/conexaoBD.php";
-include_once "../../classes/Menu/regras.php";
+include_once "classes/conexaoBD.php";
+include_once "classes/regras.php";
 
 class regrasDAO {
    
@@ -42,8 +42,8 @@ class regrasDAO {
                         VALUES ('$tipo','$descricao')";
         } else {
         $comando = "UPDATE regras
-                    SET tipo = '$tipo', descricao = '$descricao'
-                    WHERE tipo = $tipo";
+                        SET tipo = '$tipo', descricao = '$descricao'
+                        WHERE tipo = $tipo";
         }
         $this->con->exec($comando);
     }

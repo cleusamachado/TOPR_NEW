@@ -1,5 +1,6 @@
 <?php
 
+
 class nrofs {
     private $nromes;
     private $nroseq;

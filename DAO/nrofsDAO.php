@@ -1,6 +1,6 @@
 <?php
-include_once "../Modelo/conexaoBD.php";
-include_once "../Modelo/nrofs.php";
+include_once "../../BD/conexaoBD.php";
+include_once "../../classes/Menu/nrofs.php";
 
 
 class nrofsDAO {
@@ -11,16 +11,16 @@ class nrofsDAO {
         $this->con = ConexaoBD::obterConexao();
     }
 		
-    public function obterFS() { 
+    public function obterFS($nrofs) { 
         
         $comando = "SELECT nromes,nroseq,nrofs,nromensal
-                    FROM nrofs";
-                    
+                    FROM nrofs
+                    WHERE nroseq = $nroseq";
         foreach ($this->con->query($comando) as $linha) {
             $nrofs = new nrofs($linha['nromes'],$linha['nroseq'],$linha['nrofs'],$linha['nromensal']);
             $nrofs->setNroseq($linha['nroseq']);
         }
-        return $nrofs;
+        return $mensal;
     }
 
        

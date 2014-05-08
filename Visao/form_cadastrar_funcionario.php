@@ -12,7 +12,7 @@
                         <div class="col-lg-12">
                             <div class="panel panel-default">
                                 <div class="panel-body">
-                                    <form class="form-horizontal" role="form" action="../../controller/Menu/cadastra_funcionario.php" method="post">
+                                    <form class="form-horizontal" role="form" action="../Controle/cadastra_funcionario.php" method="post">
                                         <div class="form-group">
                                             <label class="col-md-5 control-label" for="nome">Nome</label>
                                             <div class="col-md-3">
@@ -45,6 +45,6 @@
                 </div>
             </div>
         </div>
-        <?php include_once '../../rodape.php';?>
+        <?php include_once '../rodape.php';?>
     </body>
 </html>

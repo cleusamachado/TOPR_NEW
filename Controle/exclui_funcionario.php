@@ -1,5 +1,5 @@
 <?php
-include_once '../../BD/Menu/funcionarioDAO.php';
+include_once '../DAO/funcionarioDAO.php';
 
 $funcionarioDAO = new funcionarioDAO();
 

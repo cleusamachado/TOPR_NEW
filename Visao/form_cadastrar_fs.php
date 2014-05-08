@@ -1,7 +1,7 @@
 <?php
-include_once '../../BD/Menu/regrasDAO.php';
-include_once '../../BD/Menu/mensais_baseDAO.php';
-include_once '../../classes/Menu/mensais_base.php';
+include_once '../DAO/regrasDAO.php';
+include_once '../DAO/mensais_baseDAO.php';
+include_once '../Modelo/mensais_base.php';
 
 $rDAO = new regrasDAO();
 $regras = $rDAO->obterRegras();
@@ -55,7 +55,7 @@ if($_GET['contador']!=NULL){
                         <div class="col-lg-12">
                             <div class="panel panel-default">
                                 <div class="panel-body">
-                                    <form class="form-horizontal" role="form" action="<?php if($_GET['contador']==NULL){echo '../../controller/Menu/cadastra_fs.php';}else{echo '../../controller/Menu/atualiza_fs.php?contador='.$_GET['contador'];}?>" method="post">
+                                    <form class="form-horizontal" role="form" action="<?php if($_GET['contador']==NULL){echo '../Controle/cadastra_fs.php';}else{echo '../Controle/atualiza_fs.php?contador='.$_GET['contador'];}?>" method="post">
                                         <div class="form-group">
                                             <label class="col-md-1 control-label" for="sis">Sistema</label>
                                             <div class="col-md-3">
@@ -176,6 +176,6 @@ if($_GET['contador']!=NULL){
                 </div>
             </div>
         </div>
-        <?php include_once '../../rodape.php'; ?>
+        <?php include_once '../rodape.php'; ?>
     </body>
 </html>

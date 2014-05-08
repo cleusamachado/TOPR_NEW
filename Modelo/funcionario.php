@@ -1,57 +1,51 @@
 <?php
 
 class funcionario {
-    private $id_funcionario;
     private $nome;
-    private $login;
-    private $senha;
+    private $permissao;
+    private $username;
     private $tipo;
 
-    public function __construct($nome, $login, $senha, $tipo) {
+    public function __construct($nome, $username, $tipo, $permissao = "") {
         $this->nome = $nome;
-        $this->login = $login;
-        $this->senha = $senha;
-	    $this->tipo = $tipo;
-    }
-    public function getId_Funcionario() {
-        return $this->id_funcionario;
-    }
-
-    public function setId_Funcionario($id_funcionario) {
-        $this->id_funcionario = $id_funcionario;
-    }
-
-    public function getLogin() {
-        return $this->login;
-    }
-
-    public function setLogin($login) {
-        $this->login = $login;
-    }
-
-    public function getSenha() {
-        return $this->senha;
-    }
-
-    public function setSenha($senha) {
-        $this->senha = $senha;
+        $this->username = $username;
+	$this->tipo = $tipo;
+        $this->permissao = $permissao;
     }
 
     public function getNome() {
         return $this->nome;
     }
 
-    public function setNome($nome) {
-        $this->nome = $nome;
+    public function getPermissao() {
+        return $this->permissao;
+    }
+
+    public function getUsername() {
+        return $this->username;
     }
 
     public function getTipo() {
         return $this->tipo;
     }
 
+    public function setNome($nome) {
+        $this->nome = $nome;
+    }
+
+    public function setPermissao($permissao) {
+        $this->permissao = $permissao;
+    }
+
+    public function setUsername($username) {
+        $this->username = $username;
+    }
+
     public function setTipo($tipo) {
         $this->tipo = $tipo;
     }
+
+
 
 }
 ?>

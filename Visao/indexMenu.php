@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <?php include_once 'head.php'; ?>
+    <?php include_once '../head.php'; ?>
     <body>
         <!--Cabeçalho-->
-        <?php include_once 'cabecalho.php'; ?>
+        <?php include_once '/cabecalho.php'; ?>
         <!--Menu-->
         <div class="container">
             <div class="jumbotron">
@@ -21,7 +21,7 @@
                                 <li class = "dropdown">
                                     <a class = "dropdown-toggle" data-toggle="dropdown">Cadastro<b class="caret"></b></a>
                                     <ul class = "dropdown-menu">
-                                        <li><a href = "form_cadastrar_funcionario.php">Cadastro de Funcionário</a></li>
+                                        <li><a href = "form_cadastrar_funcionario.php">Cadastro de Funcion�rio</a></li>
                                         <li><a href = "form_cadastrar_regras.php">Cadastro de Regras</a></li>
                                         <li><a href = "form_cadastrar_fs.php">Mensais Cadastrado</a></li>
                                     </ul>
@@ -74,7 +74,7 @@
                         <div class="col-lg-12">
                             <div class="panel panel-default">
                                 <div class="panel-body">
-                                    <img src="../../logo_procempa.jpg" alt="procempa" class="img-responsive">
+                                    <img src="../images/logo_procempa.jpg" alt="procempa" class="img-responsive">
                                 </div>
                             </div>
                         </div>
@@ -83,6 +83,6 @@
             </div>
         </div>
         <!--Roda pé-->
-        <?php include_once '../../rodape.php'; ?>
+        <?php include_once '../rodape.php'; ?>
     </body>
 </html>
